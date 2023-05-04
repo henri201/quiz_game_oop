@@ -14,4 +14,7 @@ class QuizBrain:
         self.check_answer(user_answer, current_question.answer)
 
     def check_user_answer(self, user_answer, correct_answer):
-        
+        if user_answer.lower() == correct_answer.lower():
+            print('you got it right')
+        else:
+            print('you got it wrong') 
